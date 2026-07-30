@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+*.log
+*.sqlite3
+.env
+.env.*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Project-specific
+models/*.pth
+Photos_dataset/
+
+*.pyc

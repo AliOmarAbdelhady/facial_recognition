@@ -1,0 +1,21 @@
+# Siamese Facial Recognition - inference / Gradio app
+# Tested on Python 3.10/3.11. Runs on CPU (no GPU required).
+
+# Core deep learning stack (CPU wheels). If you have a GPU, install the
+# matching CUDA torch build from https://pytorch.org instead.
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Face detection + 5-point landmark alignment (ships MTCNN).
+facenet-pytorch>=2.5.3
+
+# Affine landmark alignment (cv2.warpAffine — FaceNet/InsightFace standard).
+# Robust across versions; avoids skimage.warp's 2x3-matrix coordinate bug.
+opencv-python>=4.5.0
+
+# Numerics + imaging.
+numpy>=1.23
+Pillow>=9.0
+
+# Web UI (4 tabs: Verify / Identify / Enroll / Live webcam).
+gradio>=4.20.0
